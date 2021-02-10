@@ -73,7 +73,7 @@
 			  {
 			    const objLoader = new THREE.OBJLoader();
 			    //https://threejsfundamentals.org/threejs/resources/models/windmill/windmill.obj
-			    objLoader.load('dress.obj', (root) => {
+			    objLoader.load('random.obj', (root) => {
 			      scene.add(root);
 			      const box = new THREE.Box3().setFromObject(root);
 				  const boxSize = box.getSize(new THREE.Vector3()).length();
