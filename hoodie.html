@@ -73,10 +73,10 @@
 			  }
 
               {
-                  const mtlLoader = new MTLLoader();
+                  const mtlLoader = new THREE.MTLLoader();
                   mtlLoader.load('hoodie.mtl', (mtl) => {
                       mtl.preload();
-                      const objLoader = new OBJLoader();
+                      const objLoader = new THREE.OBJLoader();
                       objLoader.setMaterials(mtl);
                       objLoader.load('hoodie.obj', (root) => {
                           root.updateMatrixWorld();
