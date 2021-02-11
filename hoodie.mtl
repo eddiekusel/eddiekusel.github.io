@@ -6,7 +6,7 @@ Ks 0.075000 0.075000 0.075000
 Ns 28.763239
 illum 2
 d 1.000000
-map_Ka dark purple knit_DESATURATION.png
-map_Kd dark purple knit_DESATURATION.png
-map_Kn dark purple knit_2252.jpg
-map_Bump dark purple knit_NRM_68.jpg
+map_Ka dark_purple_knit_DESATURATION.png
+map_Kd dark_purple_knit_DESATURATION.png
+map_Kn dark_purple_knit_2252.jpg
+map_Bump dark_purple_knit_NRM_68.jpg
