@@ -71,17 +71,16 @@
 			    scene.add(light.target);
 			  }
 
-			  {
-			    const MTLLoader = new MTLLoader();
-                mtlLoader.load('hoodie.mtl'. (mtl) => {
+              {
+                const mtlLoader = new MTLLoader();
+                mtlLoader.load('resources/models/windmill/windmill.mtl', (mtl) => {
                     mtl.preload();
                     objLoader.setMaterials(mtl);
-                })
-                
-                const objLoader = new THREE.OBJLoader();
-			    //https://threejsfundamentals.org/threejs/resources/models/windmill/windmill.obj
-			    objLoader.load('hoodie.obj', (root) => {
-			      scene.add(root);
+                    objLoader.load('resources/models/windmill/windmill.obj', (root) => {
+                    scene.add(root);
+                    });
+                });
+              }
 			      const box = new THREE.Box3().setFromObject(root);
 				  const boxSize = box.getSize(new THREE.Vector3()).length();
 				  const boxCenter = box.getCenter(new THREE.Vector3());
