@@ -73,10 +73,10 @@
 
               {
                 const mtlLoader = new MTLLoader();
-                mtlLoader.load('resources/models/windmill/windmill.mtl', (mtl) => {
+                mtlLoader.load('hoodie.mtl', (mtl) => {
                     mtl.preload();
                     objLoader.setMaterials(mtl);
-                    objLoader.load('resources/models/windmill/windmill.obj', (root) => {
+                    objLoader.load('hoodie.obj', (root) => {
                     scene.add(root);
                     });
                 });
